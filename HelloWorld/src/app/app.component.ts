@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'HelloWorld';
+  title = 'Angular Demo';
+  public name = 'World';
+  public greeting = '';
+
+  greetUser() {
+    return 'Hello ' + this.name;
+  }
+
+  onClick(event) {
+    console.log(event.type);
+    this.greeting = 'Welcome to Demo app';
+  }
+
+  logMessage(value) {
+    console.log(value);
+  }
 }
