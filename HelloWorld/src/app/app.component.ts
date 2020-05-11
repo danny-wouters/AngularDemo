@@ -11,6 +11,14 @@ export class AppComponent {
   public greeting = '';
   public myId = "testId";
   public isDisabled = true;
+  public successClass = "text-success";
+  public hasError = true;
+  public isSpecial = true;
+  public messageClasses = {
+    'text-success': !this.hasError,
+    'text-danger': this.hasError,
+    'text-special': this.isSpecial
+  };
 
   greetUser() {
     return 'Hello ' + this.name;

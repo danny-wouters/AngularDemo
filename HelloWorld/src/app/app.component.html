@@ -339,7 +339,9 @@
 
   </div>
 
-  <h2>Demo code</h2>
+  <h2 class="text-special" [class]="successClass">Demo code</h2>
+  <h3 [class.text-danger]="hasError">Demo code</h3>
+  <h4 [ngClass]="messageClasses">Demo code</h4>
   <button (click)="onClick($event)">Greet</button>
   {{greeting}}<br />
   <input #myInput type="text" />
