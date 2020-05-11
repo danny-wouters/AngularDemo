@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-demo',
@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./demo.component.css']
 })
 export class DemoComponent implements OnInit {
-  public name = 'World';
+  @Input('parentData') public name;
   public greeting = '';
+  public twowayBind = 'Mars';
   public myId = 'testId';
   public isDisabled = true;
   public successClass = 'text-success';

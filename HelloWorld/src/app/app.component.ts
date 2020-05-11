@@ -9,7 +9,6 @@ export class AppComponent {
   title = 'Angular Demo';
   public name = 'World';
 
-
   greetUser() {
     return 'Hello ' + this.name;
   }
