@@ -352,6 +352,15 @@
   <input [disabled]="isDisabled" [id]="myId" type="text" value="Demo" />
   <input [(ngModel)]="name" type="text" />
   {{name}}
+  <!-- <h2 *ngIf="displayName; else elseBlock">Demo directives</h2> -->
+  <div *ngIf="displayName; then thenBlock; else elseBlock"></div>
+  <ng-template #thenBlock>
+    <h2>Demo ngIf</h2>
+  </ng-template>
+  <ng-template #elseBlock>
+    <h2>Name is hidden</h2>
+  </ng-template>
+
   <!-- Resources -->
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>

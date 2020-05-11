@@ -24,6 +24,7 @@ export class AppComponent {
     color: 'blue',
     fontStyle: 'italic'
   };
+  public displayName = false;
 
   greetUser() {
     return 'Hello ' + this.name;
