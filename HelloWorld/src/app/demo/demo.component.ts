@@ -9,6 +9,14 @@ export class DemoComponent implements OnInit {
   @Input('parentData') public name;
   @Output() public childEvent = new EventEmitter();
 
+  public demoName = 'Demo Test';
+  public message = 'Welcome to code demo';
+  public person = {
+    firstName: 'John',
+    lastName: 'Doe'
+  };
+  public demoDate = new Date();
+
   public greeting = '';
   public twowayBind = 'Mars';
   public myId = 'testId';
