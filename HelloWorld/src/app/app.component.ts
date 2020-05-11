@@ -9,6 +9,8 @@ export class AppComponent {
   title = 'Angular Demo';
   public name = 'World';
   public greeting = '';
+  public myId = "testId";
+  public isDisabled = true;
 
   greetUser() {
     return 'Hello ' + this.name;

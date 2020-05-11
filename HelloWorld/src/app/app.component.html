@@ -344,6 +344,7 @@
   {{greeting}}<br />
   <input #myInput type="text" />
   <button (click)="logMessage(myInput.value)">Log</button>
+  <input [disabled]="isDisabled" [id]="myId" type="text" value="Demo" />
 
   <!-- Resources -->
   <h2>Resources</h2>
