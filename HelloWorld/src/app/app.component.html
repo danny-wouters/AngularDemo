@@ -339,7 +339,8 @@
 
   </div>
 
-  <app-demo [parentData]="name"></app-demo>
+  <h1>{{ message }}</h1>
+  <app-demo (childEvent)="message=$event" [parentData]="name"></app-demo>
 
   <!-- Resources -->
   <h2>Resources</h2>

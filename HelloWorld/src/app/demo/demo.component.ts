@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-demo',
@@ -7,6 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DemoComponent implements OnInit {
   @Input('parentData') public name;
+  @Output() public childEvent = new EventEmitter();
+
   public greeting = '';
   public twowayBind = 'Mars';
   public myId = 'testId';
@@ -36,6 +38,11 @@ export class DemoComponent implements OnInit {
   logMessage(value) {
     console.log(value);
   }
+
+  fireEvent() {
+    this.childEvent.emit('Hey Demo');
+  }
+
   constructor() { }
 
   ngOnInit() {
