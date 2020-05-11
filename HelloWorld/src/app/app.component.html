@@ -342,6 +342,9 @@
   <h2 class="text-special" [class]="successClass">Demo code</h2>
   <h3 [class.text-danger]="hasError">Demo code</h3>
   <h4 [ngClass]="messageClasses">Demo code</h4>
+  <h4 [style.color]="hasError ? 'red' : 'green'">Style Binding</h4>
+  <h4 [style.color]="highlightColor">Style Binding 2</h4>
+  <h4 [ngStyle]="titleStyles">Style Binding 3</h4>
   <button (click)="onClick($event)">Greet</button>
   {{greeting}}<br />
   <input #myInput type="text" />

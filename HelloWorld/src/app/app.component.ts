@@ -19,6 +19,11 @@ export class AppComponent {
     'text-danger': this.hasError,
     'text-special': this.isSpecial
   };
+  public highlightColor = 'orange';
+  public titleStyles = {
+    color: 'blue',
+    fontStyle: 'italic'
+  };
 
   greetUser() {
     return 'Hello ' + this.name;
