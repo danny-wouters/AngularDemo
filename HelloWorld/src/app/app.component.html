@@ -366,6 +366,9 @@
     <div *ngSwitchCase="'green'">You chose the green color</div>
     <div *ngSwitchDefault>Choose again</div>
   </div>
+  <div *ngFor="let color of colors; index as i; first as f; last as l; even as e; odd as o">
+    <h2>{{i}} {{f}} {{l}} {{e}} {{o}} {{color}}</h2>
+  </div>
 
   <!-- Resources -->
   <h2>Resources</h2>

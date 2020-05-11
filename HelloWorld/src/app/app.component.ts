@@ -26,6 +26,7 @@ export class AppComponent {
   };
   public displayName = false;
   public color = 'red';
+  public colors = ['red', 'blue', 'green', 'yellow'];
 
   greetUser() {
     return 'Hello ' + this.name;
