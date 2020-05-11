@@ -360,6 +360,12 @@
   <ng-template #elseBlock>
     <h2>Name is hidden</h2>
   </ng-template>
+  <div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">You chose the red color</div>
+    <div *ngSwitchCase="'blue'">You chose the blue color</div>
+    <div *ngSwitchCase="'green'">You chose the green color</div>
+    <div *ngSwitchDefault>Choose again</div>
+  </div>
 
   <!-- Resources -->
   <h2>Resources</h2>
