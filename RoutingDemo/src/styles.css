@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+nav ul {
+    list-style-type: none;
+}
+nav a {
+    color: #607D8B;
+    background-color: white;
+}
+nav a:link a:visited {
+    color: #607D8B;
+    background-color: white;
+}
+nav a.hover a.active {
+    color: #039be5;
+    background-color: white;
+}
