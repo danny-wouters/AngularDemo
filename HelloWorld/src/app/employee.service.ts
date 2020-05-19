@@ -17,6 +17,6 @@ export class EmployeeService {
       .pipe(catchError(this.errorHandler));
   }
   errorHandler(error: HttpErrorResponse) {
-    return throwError( error.message || "Sever Error");
+    return throwError( error.message || "Server Error");
   }
 }
